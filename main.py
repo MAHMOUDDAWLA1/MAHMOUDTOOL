@@ -237,7 +237,7 @@ def banner(console):
     console.print(colorful_text)
     print(
         Colorate.Horizontal(
-            Colors.blue_to_red,
+            Colors.green_to_red,
             Center.XCenter(
                 "─════════════════════════════[ MAHMOUDVIP  ]════════════════════════════─"
             ),
@@ -246,7 +246,7 @@ def banner(console):
 
     print(
         Colorate.Horizontal(
-            Colors.blue_to_red,
+            Colors.green_to_red,
             Center.XCenter(
             f" ﻙﻮﺘﻜﻴﺗ: @{__CHANNEL_USERNAME__}"    
           ),
@@ -255,7 +255,7 @@ def banner(console):
 
     print(
         Colorate.Horizontal(
-            Colors.blue_to_red,
+            Colors.green_to_red,
             Center.XCenter(
                 f" ﻡﺍﺮﺠﻴﻠﻴﺗ: @{__CHANNEL_USERNAME__}"
             ),
@@ -264,7 +264,7 @@ def banner(console):
 
     print(
         Colorate.Horizontal(
-            Colors.blue_to_red,
+            Colors.green_to_red,
             Center.XCenter(
                 "─══════════════════════════[ MAHMOUDVIP ]══════════════════════════─"
             ),
@@ -289,7 +289,7 @@ def load_player_data(cpm):
             coin = data.get("coin")
             print(
                 Colorate.Horizontal(
-                    Colors.blue_to_red,
+                    Colors.green_to_red,
                     Center.XCenter(
                         f"ﻢﺳﺍ: {name} <> ﻲﻠﺤﻣ ﻑﺮﻌﻣ: {local_id} <> ﻝﺎﻣ: {money} <> ﺔﻴﻧﺪﻌﻣ ﺕﻼﻤﻋ: {coin}"
                     ),
@@ -298,14 +298,14 @@ def load_player_data(cpm):
         else:
             print(
                 Colorate.Horizontal(
-                    Colors.blue_to_red,
+                    Colors.green_to_red,
                     "                            ! 👑 MAHMOUDVIP  👑 !",
                 )
             )
     else:
         print(
             Colorate.Horizontal(
-                Colors.blue_to_red, "                           ! 👑 ﺕﻮـــﻤــــﻟﺍ ﻑﻭﺮـــﺣ  ﻚــﻤــﻋ  👑 !"
+                Colors.green_to_red, "                           ! 👑 ﺕﻮـــﻤــــﻟﺍ ﻑﻭﺮـــﺣ  ﻚــﻤــﻋ  👑 !"
             )
         )
 
@@ -316,7 +316,7 @@ def load_key_data(cpm):
 
     print(
         Colorate.Horizontal(
-            Colors.blue_to_red,
+            Colors.green_to_red,
             Center.XCenter(
                 "─══════════════════════[ MAHMOUD VIP ]══════════════════════─"
             ),
@@ -331,7 +331,7 @@ def prompt_valid_value(content, tag, password=False):
         if not value or value.isspace():
             print(
                 Colorate.Horizontal(
-                    Colors.blue_to_red,
+                    Colors.green_to_red,
                     f"{tag} CANNOT BE EMPTY OR JUST SPACES, PLEASE TRY AGAIN",
                 )
             )
@@ -383,29 +383,29 @@ if __name__ == "__main__":
         login_response = cpm.login(acc_email, acc_password)
         if login_response != 0:
             if login_response == 100:
-                print(Colorate.Horizontal(Colors.blue_to_red, "ACCOUNT NOT FOUND"))
+                print(Colorate.Horizontal(Colors.green_to_red, "ACCOUNT NOT FOUND"))
                 sleep(2)
                 continue
             elif login_response == 101:
-                print(Colorate.Horizontal(Colors.blue_to_red, "WRONG PASSWORD"))
+                print(Colorate.Horizontal(Colors.green_to_red, "WRONG PASSWORD"))
                 sleep(2)
                 continue
             elif login_response == 103:
-                print(Colorate.Horizontal(Colors.blue_to_red, "INVALID ACCESS KEY"))
+                print(Colorate.Horizontal(Colors.green_to_red, "INVALID ACCESS KEY"))
                 sleep(2)
                 continue
             else:
-                print(Colorate.Horizontal(Colors.blue_to_red, "TRY AGAIN"))
+                print(Colorate.Horizontal(Colors.green_to_red, "TRY AGAIN"))
                 print(
                     Colorate.Horizontal(
-                        Colors.blue_to_red,
+                        Colors.green_to_red,
                         "! NOTE: MAKE SURE YOU FILLED OUT THE FIELDS",
                     )
                 )
                 sleep(2)
                 continue
         else:
-            print(Colorate.Horizontal(Colors.blue_to_red, "ﺢﺟﺎﻧ"))
+            print(Colorate.Horizontal(Colors.green_to_red, "ﺢﺟﺎﻧ"))
             sleep(2)
         while True:
             banner(console)
@@ -466,7 +466,7 @@ if __name__ == "__main__":
             ]
             print(
                 Colorate.Horizontal(
-                    Colors.blue_to_red,
+                    Colors.green_to_red,
                     Center.XCenter(
                         Box.DoubleCube(
                             "➩ (01) ﻝﺎﻤﻟﺍ ﺓﺩﺎﻳﺯ                1.5K  |  ➩ (02) ﺔﻴﻧﺪﻌﻤﻟﺍ ﺕﻼﻤﻌﻟﺍ ﺓﺩﺎﻳﺯ                1.5K\n\n"
@@ -501,13 +501,13 @@ if __name__ == "__main__":
 
             print(
                 Colorate.Horizontal(
-                    Colors.blue_to_red, Center.XCenter(Box.DoubleCube(" ➩{0}: ﺝﻭﺮﺧ"))
+                    Colors.green_to_red, Center.XCenter(Box.DoubleCube(" ➩{0}: ﺝﻭﺮﺧ"))
                 )
             )
 
             print(
                 Colorate.Horizontal(
-                    Colors.blue_to_red,
+                    Colors.green_to_red,
                     " ─═════════════════════════════════════[ MAHMOUD VIP ]══════════════════════════════════─",
                 )
             )
@@ -522,7 +522,7 @@ if __name__ == "__main__":
                 console.print("[bold white] ﻲﺗﺍﺩﺃ ﻡﺍﺪﺨﺘﺳﺍ ﻰﻠﻋ ﻚﻟ ﺍﺮﻜﺷ[/bold white]")
             elif service == 1:  # Increase Money
                 console.print(
-                    "[bold blue][bold white][?][/bold white] Insert how much money do you want[/bold blue]"
+                    "[bold green][bold white][?][/bold white] Insert how much money do you want[/bold green]"
                 )
                 amount = IntPrompt.ask("[?] Amount")
                 console.print("[%] Saving your data: ", end=None)
@@ -555,7 +555,7 @@ if __name__ == "__main__":
                     continue
             elif service == 2:  # Increase Coins
                 console.print(
-                    "[bold blue][bold white][?][/bold white] Insert how much coins do you want[/bold blue]"
+                    "[bold blue][bold white][?][/bold white] Insert how much coins do you want[/bold green]"
                 )
                 amount = IntPrompt.ask("[?] Amount")
                 print("[ % ] Saving your data: ", end="")
@@ -582,7 +582,7 @@ if __name__ == "__main__":
                 else:
                     console.print("[bold red]FAILED[/bold red]")
                     console.print(
-                        "[bold blue] 'Please use valid values[/bold blue]"
+                        "[bold green] 'Please use valid values[/bold green]"
                     )
                     sleep(2)
                     continue
@@ -781,7 +781,7 @@ if __name__ == "__main__":
                 elif status == 105:
                     console.print("[bold red]FAILED[/bold red]")
                     console.print(
-                        "[bold blue] 'This email is already exists ![/bold blue]"
+                        "[bold green] 'This email is already exists ![/bold green]"
                     )
                     sleep(2)
                     continue
