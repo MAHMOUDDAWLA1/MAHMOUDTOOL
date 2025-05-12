@@ -40,12 +40,12 @@ try:
 
     def color(text, fore=None, back=None):
         color_map = {
-            (255, 0, 0): Fore.BLUE,
-            (0, 255, 0): Fore.BLUE,
-            (0, 0, 255): Fore.BLUE,
-            (255, 255, 0): Fore.BLUE,
-            (0, 255, 255): Fore.BLUE,
-            (255, 0, 255): Fore.BLUE,
+            (255, 0, 0): Fore.green,
+            (0, 255, 0): Fore.green,
+            (0, 0, 255): Fore.green,
+            (255, 255, 0): Fore.green,
+            (0, 255, 255): Fore.green,
+            (255, 0, 255): Fore.green,
         }
         result = ""
         if fore in color_map:
@@ -74,12 +74,12 @@ except Exception as e:
 
     def color(text, fore=None, back=None):
         color_map = {
-            (0, 0, 255): Fore.BLUE,
-            (0, 0, 255): Fore.BLUE,
-            (0, 0, 255): Fore.BLUE,
-            (0, 0, 255): Fore.BLUE,
-            (0, 0, 255): Fore.BLUE,
-            (0, 0, 255): Fore.BLUE,
+            (0, 0, 255): Fore.green,
+            (0, 0, 255): Fore.green,
+            (0, 0, 255): Fore.green,
+            (0, 0, 255): Fore.green,
+            (0, 0, 255): Fore.green,
+            (0, 0, 255): Fore.green,
         }
         result = ""
         if fore in color_map:
