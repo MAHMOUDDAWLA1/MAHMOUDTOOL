@@ -7,7 +7,7 @@ import urllib.parse
 import requests
 
 
-__ENDPOINT_URL__: str = "https://popstool.io/api"
+__ENDPOINT_URL__: str = "https://lightskyblue-swan-106364.hostingersite.com/api"
 
 
 class CPMHROF:
